@@ -1,0 +1,233 @@
+.Encabezado{
+    display: flex;
+    height: 100px;
+    background-color: rgb(231, 141, 236);
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    
+}
+.logos{
+    display: flex;
+    align-items: center;
+   
+}
+input{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #444;
+    border: 3px solid #a50559;
+    float: right ;
+    width: 800px;
+    
+    transition: all .5s;
+    background-color: #fff;
+    border-color: #8c10b3;
+    box-shadow:0 0 5px #6dcff680;
+    cursor:pointer;
+}
+
+a{
+    align-items: center;
+    padding: 30px;
+    text-decoration: none;
+    color:rgb(126, 71, 230)  
+}
+
+.texto{ 
+    height: 70%;
+    width: 100%;
+   display: flex;
+   
+   align-items: center;
+    background-color: rgb(244, 244, 239);
+    color:rgb(126, 71, 230)    
+}
+.imagenes{
+    height: 40px;
+    width: 40px;
+    margin: 10px;
+}
+.salida{
+    height: 40px;
+    width: 40px;
+    justify-content: space-between;
+  background-position: right top;
+}
+.LogoStopover{
+    position: relative;
+    background-color: rgb(66, 150, 234);
+    background-image: url('../images/LogoLetter.png');
+    background-size: contain;
+    flex-direction: row;
+    width: 100%;
+    height: 90%;
+    background-repeat: repeat-x;
+    background-position: center;
+    padding: 100px;
+    margin: 1px;
+    border: solid 1px rgb(247, 10, 191);
+}
+.banner{
+    position: relative;
+    background-color: beige;
+    background-image: url('../images/oferta/R.png');
+    background-size: contain;
+    width: 100%;
+    height: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    padding: 200px;
+    margin: 1px;
+    border: solid 1px rgb(230, 193, 232);
+}
+
+
+.titulo{
+    font-family:'Courier New', Courier, monospace;
+    text-align: center;
+    padding: 20px;
+    background-color: rgb(244, 244, 239); 
+    color:rgb(126, 71, 230)
+    
+    
+}
+.seccion1{
+    background-color: rgb(245, 235, 235);
+    width: 100%;
+    height: 71vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.bloque_izq{
+    width: 50%;
+    background-color: #e9d4df;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagen_izq{
+    width: 100%;
+}
+.imagen_izq img{
+    object-fit: cover;
+    width: 100%;
+    
+}
+
+
+
+.bloque_der{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.imagenes_der{
+    width: 130%;
+
+}
+.imagenes_izquierda{
+    object-fit: cover;
+    width: 100%;
+}
+
+
+
+
+
+.imagenes_der img{
+    object-fit: cover;
+    width: 100%;
+    height: 50;
+}
+.seccioncita{
+    background-color: rgb(245, 235, 235);
+    width: 50%;
+    height: 46vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.seccionderecha{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagenes_derecha{
+    width: 50%;
+}
+.imagenes_derecha img{
+    object-fit: cover;
+    width: 100%;
+    height: 50;
+}
+
+.seccion2{
+    background-color: rgb(231, 141, 236);
+    padding: 13%;
+}
+
+/* background-image: url('../images/oferta/gorra.webp');
+    background-image: url('../images/oferta/guantes.jpg');
+    background-image: url('../images/oferta/fajas.jpg'); 
+    
+    
+    .accesorios, h1s{
+    text-align: left;
+    position:left;
+    background-image: url('../images/oferta/ropa.jpg') ;
+    background-position: left top;
+    background-size:contain;
+    width: 15%;
+    height: 15%;
+    background-repeat: no-repeat;
+    padding: 100px;
+}
+
+imagen de la oferta
+.imagen{
+    background-color: #8c10b3;;
+    background-image: url('../images/oferta/3b63dbf8ea52522b595bbcff127e480b.jpg');
+    background-size: cover; 
+    width: 50%;
+    height: 50%;
+    background-repeat: no-repeat;
+    padding: 280px;
+    
+}
+    
+*/
+
+
+/*Footer*/
+.footer{
+    background-color: #c257e6;
+}
+
+.footer__container{
+    color: #fff;
+    gap: 1rm;
+}
+
+.nav__footer{
+    text-align: center;
+    font-size: 25px;
+}
+.footer__copys{
+    color: white;
+    text-align: center;
+    gap: 1rm;
+    font-size: 13px;
+}
+
+
