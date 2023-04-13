@@ -58,6 +58,8 @@ async function write(products) {
 
 //readAndWrite();
 
+//test de comits en github
+
 module.exports = {
     read,
     write,
