@@ -186,3 +186,18 @@ body{
     gap: 1rm;
     font-size: 13px;
 }
+
+.Lo_mas_vendido h2{
+    border-style:solid;
+    border-color: rgb(196, 148, 182);
+    color: white;
+    background-color: #cb9df1;
+    border-radius: 5px;
+    text-align: center;
+
+}
+.Lo_mas_vendido p{
+    text-align: center;
+    padding: 10%;
+}
+

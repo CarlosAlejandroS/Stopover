@@ -120,57 +120,25 @@ a{
     
 }
 
-
-
 .bloque_der{
     width: 50%;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.imagenes_der{
-    width: 130%;
-
-}
-.imagenes_izquierda{
-    object-fit: cover;
-    width: 100%;
-}
-
-
-
-
-
-.imagenes_der img{
-    object-fit: cover;
-    width: 100%;
-    height: 50;
-}
-.seccioncita{
-    background-color: rgb(245, 235, 235);
-    width: 50%;
-    height: 46vh;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-}
-.seccionderecha{
-    width: 50%;
+    background-color: #e9d4df;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.imagenes_derecha{
-    width: 50%;
+.imagen_der{
+    width: 100%; 
 }
-.imagenes_derecha img{
-    object-fit: cover;
-    width: 100%;
-    height: 50;
+.imagen_der img{
+    height: 30%;
+    width: 70%;
+    
 }
+
+
+
 
 .seccion2{
     background-color: rgb(231, 141, 236);
@@ -204,6 +172,87 @@ imagen de la oferta
     background-repeat: no-repeat;
     padding: 280px;
     
+
+
+
+
+    .bloque_der{
+    width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.imagenes_der{
+    width: 130%;
+
+}
+.imagenes_izquierda{
+    object-fit: cover;
+    width: 100%;
+
+    
+.seccioncita{
+   
+    
+    width: 50%;
+    height: 40vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+}
+
+
+
+
+
+.imagenes_der img{
+    object-fit: cover;
+    width: 100%;
+    height: 50;
+
+
+
+
+    .bloque_izq{
+    width: 50%;
+    background-color: #e9d4df;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.imagenes_der{
+    width: 20%;
+    display: flex;
+}
+
+.imagenes_izquierda img{
+    object-fit: cover;
+    width: 25%;
+    height: 50;
+}
+.seccionderecha{
+   
+    width: 50%;
+    background-color: #e9d4df;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.imagenes_derecha{
+    width: 20%;
+    display: flex;
+}
+.imagenes_derecha img{
+    object-fit: cover;
+    width: 50%;
+    height: 50;
+}
+}
 }
     
 */
