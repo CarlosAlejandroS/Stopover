@@ -2,7 +2,7 @@
 
 :root{
     --padding-container: 100px 0;
-    --color-title: #001A49;
+    --color-title: #000000;
 }
 
 body{
@@ -17,6 +17,27 @@ body{
     overflow: hidden;
     padding: var(--padding-container);
 }
+input{
+    padding: 9px 10px 9px 32px;
+    outline: none;
+    font-size: 18px;
+    border-radius: 15px;
+    color: #444;
+    border: 3px solid #a50559;
+    float: right ;
+    width: 600px;
+    
+    transition: all .5s;
+    background-color: #fff;
+    border-color: #8c10b3;
+    box-shadow:0 0 5px #6dcff680;
+    cursor:pointer;
+}
+.logos{
+    display: flex;
+    align-items: flex-end;
+}
+
 
 .hero{
     width: 100%;
@@ -53,7 +74,7 @@ body{
 
 .nav__title{
     font-weight: 700;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
 .nav__link{
@@ -86,7 +107,7 @@ body{
     gap: 1em;
     padding-bottom: 100px;
     text-align: center;
-    color: #000000;
+    color: #f1e7e7;
 }
 
 .hero__title{
@@ -163,8 +184,17 @@ body{
     text-decoration: none;
     font-weight: 600;
 }
+.indicaciones{
+    border-color: rgb(196, 148, 182);
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1%;
+}
 
-/*Footer*/
+/*Footer 
+*/
 
 
 .footer{
@@ -190,14 +220,20 @@ body{
 .Lo_mas_vendido h2{
     border-style:solid;
     border-color: rgb(196, 148, 182);
-    color: white;
+    
     background-color: #cb9df1;
     border-radius: 5px;
     text-align: center;
 
 }
 .Lo_mas_vendido p{
+
     text-align: center;
     padding: 10%;
+}
+.Lo_mas_vendido img{
+    background-color: #f1e7e7;
+
+    padding: 1%;
 }
 
