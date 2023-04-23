@@ -1,18 +1,11 @@
 const { google } = require('googleapis');
 
-const OAuth2Client = new google.auth.OAuth2(
-    "710831994709-uop2mejfmldo7dekibh4egba5nibr3i6.apps.googleusercontent.com",
-    "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",
-    "http://localhost");
+const auth = new google.auth.GoogleAuth({
+    keyFile: './your-secret-key.json',
+    scopes: ['https://www.googleapis.com/auth/spreadsheets'],
+  });
 
-OAuth2Client.setCredentials({
-    type: "authorized_user",
-    client_id: "710831994709-uop2mejfmldo7dekibh4egba5nibr3i6.apps.googleusercontent.com",
-    client_secret: "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",
-    refresh_token: "1//05gDLqi4uoX5UCgYIARAAGAUSNwF-L9Ir0GZ_b1-BsNDaPIUFE4rbe6s-Xw0UT5beQveASM4EoPg3VeBesz0zq1FlzTXcqxI9vnQ"
-});
-
-const sheets = google.sheets({ version: 'v4', auth: OAuth2Client });
+const sheets = google.sheets({ version: 'v4', auth: auth });
 
 async function read() {
 
