@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Tienda Online</title>
+    <meta name="viewport"
+        content="width==device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, maximun-scale=1.0">
+        <!--Conexion con la base de datos-->
+        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./css/estilooferts.css">
+        <script src="scripts.js"></script>
+        <!--Conexion con las librerías de Font-Awesome-->
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <header class="main-header">
+        <div class="container container--flex">
+            <div class="main-header__container">
+                <h1 class="main-header__title">STOPOVER FITNESS</h1>
+                <!--Menú de navegación-->
+                <span class="icon-menu fa-solid fa-bars" id="btn-menu"></span>
+                <nav class="main-nav" id="main-nav">
+                    <ul class="menu">
+                        <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">ABOUT</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">FEATURES</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">SHOP</a></li>
+                        <li class="menu__item"><a href="" class="menu__link">CONTACT</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="main-header__container">
+                <span class="main-header__txt">¿Necesitas ayuda?</span>
+                <p class="main-header__txt"><i class="fa-solid fa-phone"></i> Llama al 123456789</p>
+            </div>
+            <div class="main-header__container">
+                <i class="fa-solid fa-user"></i>
+                <a href="" class="main-header__btn">Carrito <i class="fa-solid fa-cart-shopping"></i></a>
+                <input type="search" class="main-header__imput" placeholder="Buscar Productos"><i
+                    class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+    </header>
+    <div class="container-slider">
+        <div class="slider" id="slider">
+            <div class="slider__section">
+                <img src="./images/oferta/img1.jpg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Woman's healt</h2>
+                    <p class="slider__txt">Cool summer sale 50% off</p>
+                    <a href="" class="slider__link">COMPRA AHORA</a>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="./images/oferta/img2.jpg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Best Dumbbells</h2>
+                    <p class="slider__txt">Cool summer sale 50% off</p>
+                    <a href="" class="slider__link">COMPRA AHORA</a>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="./images/oferta/img3.jpg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Lifting</h2>
+                    <p class="slider__txt">Cool summer sale 50% off</p>
+                    <a href="" class="slider__link">COMPRA AHORA</a>
+                </div>
+            </div>
+            <div class="slider__section">
+                <img src="./images/oferta/img4.jpg" alt="" class="slider__img">
+                <div class="slider__content">
+                    <h2 class="slider__title">Mens's healt</h2>
+                    <p class="slider__txt">Cool summer sale 50% off</p>
+                    <a href="" class="slider__link">COMPRA AHORA</a>
+                </div>
+            </div>
+        </div>
+        <div class="slider__btn slider__btn--right" id="btn-right">&#62;</div>
+        <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
+    </div>
+
+    <!--
+    <main class="main">
+        <div class="container">
+            <h2 class="main-title">New arrivals for you</h2>
+            <section class="container-products">
+                   
+                    <div class="product">
+                        <img src="./images/product-2.jpg" alt="" class="product__img">
+                        <div class="product__description">
+                            <h3 class="produc__title">Banco ajustable</h3>
+                            <span class="product__price">$200.00</span>
+                        </div>
+                        <i class="product__icon fa-solid fa-cart-plus"></i>
+                    </div>
+
+                    <div class="product">
+                        <img src="./images/product-3.jpg" alt="" class="product__img">
+                        <div class="product__description">
+                            <h3 class="produc__title">Kit de pesas con estuche</h3>
+                            <span class="product__price">$75.00</span>
+                        </div>
+                        <i class="product__icon fa-solid fa-cart-plus"></i>
+                    </div>
+                    
+
+                    <div class="product">
+                        <img src="./images/product-6.jpg" alt="" class="product__img">
+                        <div class="product__description">
+                            <h3 class="produc__title">Bolsa de boxeo con pie</h3>
+                            <span class="product__price">$80.00</span>
+                        </div>
+                        <i class="product__icon fa-solid fa-cart-plus"></i>
+                    </div>
+                    
+
+                    <div class="product">
+                        <img src="./images/product-4.jpg" alt="" class="product__img">
+                        <div class="product__description">
+                            <h3 class="produc__title">Pesas</h3>
+                            <span class="product__price">$50.00</span>
+                        </div>
+                        <i class="product__icon fa-solid fa-cart-plus"></i>
+                    </div>
+                    
+            </section>
+        </div>
+    </main>
+    -->
+
+    <!--Conexion con la base de datos-->
+    <div id="page-content" class="page-content">  
+        <div class="product"></div> 
+    </div>
+   
+
+    <!--Conexion con el slider-->
+    <script src="slider.js"></script>
+
+</body>
+</html>
