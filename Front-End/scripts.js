@@ -48,7 +48,7 @@ function displayProducts() {
         `<div class="product-container">
             <h3>${p.name}</h3>
             <img src="${p.image}" />
-            <h1>$${p.price}</h1>
+            <h1>$${p.price}.00</h1>
             ${buttonHTML}
         </div>`
     });

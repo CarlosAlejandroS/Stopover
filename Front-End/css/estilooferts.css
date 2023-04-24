@@ -25,14 +25,58 @@ img {
     font-family: 'Poppins', sans-serif;
 }
 
-.main-nav {
-    display: none;
-}
-
 .main-header__container {
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+.main-header__link {
+    color: #333;
+}
+
+
+/* Estilos del Menu */
+.main-nav {
+    opacity: 0;
+    visibility: hidden;
+    transition: all 0.5s;
+    z-index: 999999;
+
+}
+
+.menu {
+    position: absolute;
+    top: 180px;
+    left: 0;
+    background: #212121;
+    width: 100%;
+    list-style: none;
+    padding: 0px;
+    margin: 0;
+}
+
+.menu__item {
+    text-align: center;
+    margin: auto;
+}
+
+.menu__link {
+    padding: 20px;
+    color: white;
+    text-decoration: none;
+    position: relative;
+    display: block;
+}
+
+.menu__link:hover {
+    background: white;
+    color: #212121;
+}
+
+.mostrar {
+    opacity: 1;
+    visibility: visible;
 }
 
 .icon-menu {
@@ -41,6 +85,7 @@ img {
     display: block;
     padding: 10px 20px;
     cursor: pointer;
+    margin-left: auto;
 }
 
 .main-header__btn {
@@ -54,7 +99,9 @@ img {
 .main-header__imput {
     display: block;
     padding: 10px;
+    width: 50%;
 }
+
 
 .mian {
     padding: 20px;
@@ -166,6 +213,12 @@ img {
     text-decoration: none;
     width: 150px;
     margin: 20px auto;
+    transition: all 0.5s;
+}
+
+.slider__link:hover {
+    background: #FF4E00;
+    color: white;
 }
 
 
@@ -183,20 +236,6 @@ img {
     text-align: center;
     position: relative;
 }
-
-/*Agregar etiqueta NEW*/
-.product::before {
-    content: "New";
-    background: #FF4E00;
-    padding: 10px;
-    width: 65px;
-    position: absolute;
-    top: 20px;
-    right: 10px;
-    transform: rotate(-90deg);
-    color: white;
-}
-/*-------------------------*/
 
 .product__img {
     width: 100%;
@@ -218,8 +257,144 @@ img {
     margin-top: 10px;
 }
 
+/*Contenedor de los testimonios*/
+.container__testimonials {
+    text-align: center;
+    background: #F7F7F7;
+    padding: 20px;
+    margin: 20px 0;
+}
 
-/*Base de datos*/
+.testimonial__txt {
+    color: #777;
+}
+
+/*Circulo de las imagenes*/
+.container-editor {
+    margin-top: 20px;
+}
+
+.editor__item {
+    height: 200px;
+    position: relative;
+    overflow: hidden;
+}
+
+.editor__img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.editor__circle {
+    width: 200px;
+    height: 200px;
+    border: 2px solid white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    bottom: -200px;
+    right: -150px;
+    color: white;
+    padding: 20px;
+    padding-bottom: 70px;
+    padding-right: 50px;
+    font-size: 1.1em;
+    text-align: center;
+    font-weight: bold;
+    transition: all 0.5s;
+}
+
+.editor__item:hover .editor__circle {
+    transform: scale(1.2);
+    bottom: -90px;
+    right: -50px;
+}
+
+.editor__item::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.editor__item:hover::before {
+    opacity: 1;
+}
+
+.container-tips {
+    margin: 20px 0;
+    text-align: center;
+}
+
+.tip__btn {
+    display: block;
+    border: 1px solid #FF4E00;
+    color: #333;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    width: 150px;
+    margin: 20px auto;
+    transition: all 0.5s;
+}
+
+.tip__btn:hover {
+    background: #FF4E00;
+    color: white;
+}
+
+.tip i {
+    font-size: 1.5em;
+    color: #333;
+    padding: 20px 0;
+}
+
+/*CSS DEL FOOTER*/
+.main-footer {
+    background: #151515;
+    color: white;
+    padding: 30px 20px;
+}
+
+.footer__title {
+    border-bottom: 1px dotted #555;
+    padding-bottom: 20px;
+}
+
+.footer__txt {
+    color: #555;
+}
+
+.footer__link {
+    color: #555;
+    text-decoration: none;
+    display: block;
+    padding: 10px 0;
+}
+
+.footer__imput {
+    background: #151515;
+    width: 100%;
+    display: block;
+    padding: 20px;
+    border: 1px solid #555;
+}
+
+.copy {
+    color: #555;
+}
+
+/*------------FIN DEL FOOTER--------------------*/
+
+/*--------------Base de datos------------------*/
 .page-content {
     display: flex;
     flex-wrap: wrap;
@@ -237,22 +412,202 @@ img {
 
 .product-container:hover {
     box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
-    
+
 }
 
 .product-container img {
     width: 300px;
-    
+    text-align: center;
 }
 
 .product-container h1 {
     margin-bottom: 10px;
     margin-left: 15px;
-    
+    text-align: center;
+    color: #FF4E00;
 }
 
 .product-container h3 {
     text-align: center;
-    
+    font-size: 1.2em;
+    font-weight: bolder;
+
 }
-/*----------------------*/
+
+/*---------FIN DB-------------*/
+
+/*Agregar ficha de nuevo producto a la base de datos*/
+.product-container::before {
+    content: "New";
+    background: #FF4E00;
+    padding: 10px;
+    width: 65px;
+    position: absolute;
+    top: 20px;
+    left: 80%;
+    transform: rotate(-90deg);
+    color: white;
+}
+
+/*Estilos para web*/
+
+@media screen and (min-width:768px) {
+    .slider {
+        height: 400px;
+    }
+
+    .editor__item {
+        height: 250px;
+    }
+    .container-tips{
+        margin: 50px 0;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (min-width:1024px) {
+    .container {
+        width: 1000px;
+        margin: auto;
+    }
+
+    .page-content {
+        width: 1080px;
+        margin: auto;
+    }
+
+    .icon-menu {
+        display: none;
+    }
+
+    .main-header .container--flex {
+        display: flex;
+        align-items: center;
+    }
+
+    .main-header__container {
+        padding-top: 5px;
+        flex-wrap: wrap;
+        align-content: flex-start;
+    }
+
+    .main-header__txt {
+        width: 100%;
+    }
+
+    /*Cambiar orden de los header*/
+    .main-header__container:nth-child(2) {
+        order: -1;
+        width: 25%;
+    }
+
+    .main-header__container:nth-child(3) {
+        width: 25%;
+        padding: 0 20px;
+    }
+
+    .main-header__title {
+        width: 100%;
+        font-size: 3em;
+        margin: 0;
+        border-bottom: 1px solid #ccc;
+    }
+
+    .main-header__link {
+        margin-bottom: 20px;
+    }
+
+    .main-header__btn {
+        width: 130px;
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+
+    .main-header__imput {
+        width: 85%;
+    }
+
+    .main-nav {
+        visibility: visible;
+        opacity: 1;
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .menu {
+        position: static;
+        width: 100%;
+        display: flex;
+        background: none;
+    }
+
+    .menu__link {
+        color: #333;
+    }
+
+    .menu__link:hover {
+        background: #333;
+        color: white;
+    }
+
+    .container__testimonials{
+        font-size: 1.3em;
+    }
+
+    .container-editor{
+        display: flex;
+    }
+    .editor__item{
+        width: 48%;
+        justify-content: space-between;
+    }
+    .main-footer{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        grid-gap: 20px;
+    }
+    .copy{
+       grid-column-start: span 4; 
+       text-align: center;
+       margin: 0;
+    }
+}
+
+@media screen and (min-width:1280px) {
+    .container {
+        width: 1200px;
+    }
+
+    .main-header__container:nth-child(3) {
+        padding-left: 50px;
+    }
+
+    .main-header__container:nth-child(2) {
+        font-size: 1.2em;
+    }
+
+    .slider {
+        height: 500px;
+    }
+
+}
+
+@media screen and (min-width:1600px) {
+    .container {
+        width: 1500px;
+    }
+
+    .main-header__container:nth-child(3) {
+        padding-left: 60px;
+    }
+
+    .main-header__container:nth-child(2) {
+        font-size: 1.2em;
+
+    }
+
+    .slider {
+        height: 600px;
+    }
+}

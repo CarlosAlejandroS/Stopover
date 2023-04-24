@@ -3,15 +3,16 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>Tienda Online</title>
+    <title>Stopover Fitness</title>
+    <link rel="shortcut icon" href="./images/Favicon.svg" type="images/x-icon">
     <meta name="viewport"
         content="width==device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, maximun-scale=1.0">
-        <!--Conexion con la base de datos-->
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/estilooferts.css">
-        <script src="scripts.js"></script>
-        <!--Conexion con las librerías de Font-Awesome-->
-    
+    <!--Conexion con la base de datos-->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/estilooferts.css">
+    <script src="scripts.js"></script>
+    <!--Conexion con las librerías de Font-Awesome-->
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 
@@ -21,7 +22,7 @@
             <div class="main-header__container">
                 <h1 class="main-header__title">STOPOVER FITNESS</h1>
                 <!--Menú de navegación-->
-                <span class="icon-menu fa-solid fa-bars" id="btn-menu"></span>
+                <span class="icon-menu" id="btn-menu"><i class="fa-solid fa-bars"></i></span>
                 <nav class="main-nav" id="main-nav">
                     <ul class="menu">
                         <li class="menu__item"><a href="" class="menu__link">HOME</a></li>
@@ -35,10 +36,10 @@
 
             <div class="main-header__container">
                 <span class="main-header__txt">¿Necesitas ayuda?</span>
-                <p class="main-header__txt"><i class="fa-solid fa-phone"></i> Llama al 123456789</p>
+                <p class="main-header__txt"><i class="fa-regular fa-envelope"></i></i> Contactanos</p>
             </div>
             <div class="main-header__container">
-                <i class="fa-solid fa-user"></i>
+                <a href="./singup.html" class="main-header__link"><i class="fa-solid fa-user"></i></a>
                 <a href="" class="main-header__btn">Carrito <i class="fa-solid fa-cart-shopping"></i></a>
                 <input type="search" class="main-header__imput" placeholder="Buscar Productos"><i
                     class="fa-solid fa-magnifying-glass"></i>
@@ -84,63 +85,88 @@
         <div class="slider__btn slider__btn--left" id="btn-left">&#60;</div>
     </div>
 
-    <!--
-    <main class="main">
-        <div class="container">
-            <h2 class="main-title">New arrivals for you</h2>
-            <section class="container-products">
-                   
-                    <div class="product">
-                        <img src="./images/product-2.jpg" alt="" class="product__img">
-                        <div class="product__description">
-                            <h3 class="produc__title">Banco ajustable</h3>
-                            <span class="product__price">$200.00</span>
-                        </div>
-                        <i class="product__icon fa-solid fa-cart-plus"></i>
-                    </div>
-
-                    <div class="product">
-                        <img src="./images/product-3.jpg" alt="" class="product__img">
-                        <div class="product__description">
-                            <h3 class="produc__title">Kit de pesas con estuche</h3>
-                            <span class="product__price">$75.00</span>
-                        </div>
-                        <i class="product__icon fa-solid fa-cart-plus"></i>
-                    </div>
-                    
-
-                    <div class="product">
-                        <img src="./images/product-6.jpg" alt="" class="product__img">
-                        <div class="product__description">
-                            <h3 class="produc__title">Bolsa de boxeo con pie</h3>
-                            <span class="product__price">$80.00</span>
-                        </div>
-                        <i class="product__icon fa-solid fa-cart-plus"></i>
-                    </div>
-                    
-
-                    <div class="product">
-                        <img src="./images/product-4.jpg" alt="" class="product__img">
-                        <div class="product__description">
-                            <h3 class="produc__title">Pesas</h3>
-                            <span class="product__price">$50.00</span>
-                        </div>
-                        <i class="product__icon fa-solid fa-cart-plus"></i>
-                    </div>
-                    
-            </section>
-        </div>
-    </main>
-    -->
-
     <!--Conexion con la base de datos-->
-    <div id="page-content" class="page-content">  
-        <div class="product"></div> 
-    </div>
-   
+    <div id="page-content" class="page-content"></div>
+    <div class="container">
+    <section class="container__testimonials">
+        <h2 class="section__title">Testimonios</h2>
+        <h3 class="testimonial__title">Mario</h3>
+        <p class="testimonial__txt">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo totam quia eum non est
+            modi odio illum aliquam eius consectetur, fugit nemo beatae ex magnam impedit possimus suscipit iusto
+            delectus?</p>
+    </section>
 
+    <div class="container-editor">
+        <div class="editor__item">
+            <img src="./images/oferta/Rimg5.jpg" alt="" class="editor__img">
+            <p class="editor__circle">EXPRESS YOUR STYLE NOW</p>
+        </div>
+        <div class="editor__item">
+            <img src="./images/oferta/Rimg7.jpg" alt="" class="editor__img">
+            <p class="editor__circle">EXPRESS YOUR STYLE NOW</p>
+        </div>
+    </div>
+
+    <section class="container-tips">
+        <div class="tip">
+            <i class="fa-solid fa-hand"></i>
+            <h2 class="tip__title">NUESTRA PROMESA Y MISIÓN</h2>
+            <p class="tip__txt">Nuestra misión es proporcionar equipos de gimnasio de alto valor con confianza,
+                experiencia e innovación. Nos enorgullecemos de las relaciones que tenemos con nuestros clientes y, si
+                por alguna razón no está satisfecho, haremos todo lo posible para mejorar tu experiencia.</p>
+            <a href="" class="tip__btn">CONOCENOS</a>
+        </div>
+        <div class="tip">
+            <i class="fa-solid fa-shop"></i>
+            <h2 class="tip__title">PRODUCTOS</h2>
+            <p class="tip__txt">Somos la tienda virtual con más crecimiento del mercado, gracias a la fidelidad de
+                nuestros productos y la calidad de nuestors servicios.</p>
+            <a href="" class="tip__btn">COMPRA AHORA</a>
+        </div>
+        <div class="tip">
+            <i class="fa-solid fa-envelope"></i>
+            <h2 class="tip__title">CONTACTANOS</h2>
+            <p class="tip__txt">Nuestro objetivo principal es la satisfaccion cada uno de los usuarios, por lo tanto
+                decidimos habilitar una línea directa de contacto con nuestros clientes, facilitando la interacción
+                entre nosotros.</p>
+            <a href="" class="tip__btn">CONTACTANOS</a>
+        </div>
+    </section>
+</div>
+
+    <footer class="main-footer">
+        <div class="footer__section">
+            <h2 class="footer__title">Acerca de nosotros</h2>
+            <p class="footer__txt">Somos la tienda virtual con más crecimiento del mercado, gracias a la fidelidad de
+                nuestros productos y la calidad de nuestors servicios.</p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Dirección:</h2>
+            <p class="footer__txt">Francisco Morazán, Tegucigalpa D.C</p>
+            <h2 class="footer__title">Contacto</h2>
+            <p class="footer__txt">Telefono: 98557378</p>
+            <p class="footer__txt">Email: stopoverfitness@gmail.com</p>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Enlaces Rápidos:</h2>
+            <a href="./index.html" class="footer__link">Home</a>
+            <a href="./singup.html" class="footer__link">Sign in</a>
+            <a href="./catalogo.html" class="footer__link">Productos</a>
+            <a href="./ofertas.html" class="footer__link">Carrito</a>
+        </div>
+        <div class="footer__section">
+            <h2 class="footer__title">Suscribete para recibir ofertas</h2>
+            <p class="footer__txt">Suscribiendote con tu correo obtendrás siempre las ultimas noticias y actualizaciones
+                de nuestra tienda</p>
+            <input type="email" class="footer__imput" placeholder="Ingresa tu email">
+        </div>
+        <p class="copy">© 2023 Googles. All Rights Reserved | Design by CarlosS</p>
+    </footer>
     <!--Conexion con el slider-->
     <script src="slider.js"></script>
 
+    <!--Conexion con el menú-->
+    <script src="menu.js"></script>
 </body>
+
 </html>
