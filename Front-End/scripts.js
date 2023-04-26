@@ -28,6 +28,7 @@ async function pay() {
         window.alert("Sin stock");
     }
 
+    window.alert("Pago exitoso");
     carrito = [];
     total = 0;
     await fetchProducts();

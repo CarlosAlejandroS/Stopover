@@ -43,14 +43,6 @@ async function write(products) {
     console.log(result.updatedCells);
 }
 
-//async function readAndWrite(){
-//const products = await read();
-// products[0].stock = 10;
-//await write(products);
-//}
-
-//readAndWrite();
-
 module.exports = {
     read,
     write,

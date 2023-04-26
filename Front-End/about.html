@@ -1,14 +1,18 @@
+<!DOCTYPE html>
 <html>
     <head>
+        <meta charset="UTF-8">
         <title>Stopover Fitness</title>
         <link rel="shortcut icon" href="./images/Favicon.svg" type="images/x-icon">
+        <meta name="viewport"
+            content="width==device-width, user-scalable=no, initial-scale=1.0, maximun-scale=1.0, maximun-scale=1.0">
         <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="./css/estilocatalogo.css">
-        <script src="scripts.js"></script>
-</head>
+        <link rel="stylesheet" href="./css/about.css">
+        <!--Conexion con las librerías de Font-Awesome-->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    </head>
 <body>
-
-    <header class="main-header">
+	<header class="main-header">
         <div class="container container--flex">
             <div class="main-header__container">
                 <h1 class="main-header__title">STOPOVER FITNESS</h1>
@@ -30,22 +34,24 @@
             </div>
             <div class="main-header__container">
                 <a href="./singup.html" class="main-header__link"><i class="fa-solid fa-user"></i></a>
-                <!-- <a href="" class="main-header__btn">Carrito <i class="fa-solid fa-cart-shopping"></i></a> -->
+                <a href="" class="main-header__btn">Carrito <i class="fa-solid fa-cart-shopping"></i></a>
                 <input type="search" class="main-header__imput" placeholder="Buscar Productos"><i
                     class="fa-solid fa-magnifying-glass"></i>
             </div>
         </div>
     </header>
+	<main>
+		<section class="quienes-somos">
+			<h1>¿Quiénes somos?</h1>
 
-    <div class="page-navigat">
-        <h1>Carrito</h1>
-        <button id="checkout" class="button-checkout" onclick="pay()">Pagar</button>
-    </div> 
-
-    <div id="page-content" class="page-content">
-    </div>
-
-    <footer class="main-footer">
+			<p>Somos StopoverFitness©, una tienda especializada en la venta de productos de fitness y equipamiento deportivo. Nos apasiona ayudar a nuestros clientes a alcanzar sus objetivos de fitness y mejorar su calidad de vida a través del ejercicio.<br><br>
+            Desde nuestro lanzamiento en el año 2023, nos hemos comprometido a ofrecer los productos más innovadores y de la más alta calidad a nuestros clientes. Nuestro equipo está formado por apasionados del fitness y expertos en la industria, lo que nos permite ofrecer un servicio excepcional y asesoramiento personalizado.<br><br>
+			En StopoverFitness, creemos en la importancia de una vida activa y saludable. Por eso, nos dedicamos a ofrecer los productos más avanzados y efectivos para ayudar a nuestros clientes a alcanzar sus metas de fitness, ya sea en casa o en el gimnasio.
+            </p>
+			
+		</section>
+	</main>
+	<footer class="main-footer">
         <div class="footer__section">
             <h2 class="footer__title">Acerca de nosotros</h2>
             <p class="footer__txt">Somos la tienda virtual con más crecimiento del mercado, gracias a la fidelidad de
@@ -74,5 +80,5 @@
         </div>
         <p class="copy">© 2023 Googles. All Rights Reserved | Design by CarlosS</p>
     </footer>
-
 </body>
+</html>
